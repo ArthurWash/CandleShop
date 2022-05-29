@@ -1,0 +1,66 @@
+body {
+    background-image: url(images/floralBackground.jpg);
+    text-align: center;
+    color: rgb(226, 85, 226);
+    text-shadow: 10px 10px 10px black;
+    animation: fadein 2s;
+    font-family: 'Brush Script MT';
+}
+
+h1 {font-weight: bold; font-size: 50px;}
+
+h2 {font-weight: bold; font-size: 40px;}
+
+h3 {font-weight: bold; font-size: 30px;}
+
+img {border-radius: 10px;}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* position: fixed; */
+}
+
+li {
+   float: left;
+   margin-left: 0px;
+}
+
+.nav {
+    display: block;
+    width: 80px;
+    background-color: purple;
+    text-align: center;
+    padding: 4px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a:link {color:antiquewhite}
+
+a:visited {color: rgb(193, 193, 193)}
+
+a:hover {
+    color: plum;
+    text-decoration: underline;
+    transform: scale(1.2) perspective(1px);    
+}
+
+/* Candle link effects */
+
+.candleLink:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.1) perspective(1px);
+}
